@@ -1,15 +1,25 @@
 
-## Steps for completion
+## Assignment
+Write a program that categorizes each mail message by which day of the week the commit was done. To do this look for lines that start with “From”, then look for the third word and keep a running count of each of the days of the week. At the end of the program print out the contents of your dictionary (order does not matter).
 
-1. Open `counter.py`
-1. Complete the assignment as described in https://canvas.instructure.com/courses/3650963/assignments/25666026?module_item_id=55313483
-3. Note: complete the code inside the counter section.  Each line should be indented between the comments in that file.  For example
+Sample Line:
+```
+From stephen.marquard@uct.ac.za Sat Jan  5 09:14:16 2008
+```
 
-counter():
-    all of the
-    code you are writing
-    should be indented 4 spaces
-    in between the comments in that file
+## Starter Code
+```python
+file_name = input("Enter a file name: ")
+```
 
-1. When ready to submit, press the sync button in the assignments tab.
-1.  Hint: the desired output needs to be printed as described in the assignment, if it is not, the tests will fail.
+## Desired Output
+```
+Enter a file name: mbox-short.txt
+{'Fri': 20, 'Thu': 6, 'Sat': 1}
+```
+
+## Hint
+The desired output needs to be printed as described in the assignment, if it is not, the tests will fail.
+
+## Test
+Test your code using `pytest` in the terminal!
